@@ -3,410 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lens Star Optical | Clear Vision, Better Life</title>
+
+<title>Lens Star Optical | See Better Shine Brighter</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f8fafc;
-    color:#222;
-    line-height:1.6;
+background:#f8fafc;
+color:#222;
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
 header{
-    background:#0f172a;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:100;
+background:#001233;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#38bdf8;
+.logo img{
+height:65px;
+border-radius:50%;
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
+display:flex;
+gap:25px;
+list-style:none;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
 }
 
-nav a:hover{
-    color:#38bdf8;
+nav ul li a:hover{
+color:#4cc9f0;
 }
 
 .hero{
-    background:linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.85)),
-    url('https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1500&q=80');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    min-height:85vh;
-    display:flex;
-    align-items:center;
+background:linear-gradient(rgba(0,18,51,.75),rgba(0,18,51,.75)),
+url('shop.jpg.webp');
+background-size:cover;
+background-position:center;
+height:90vh;
+display:flex;
+align-items:center;
+color:white;
 }
 
 .hero-content{
-    max-width:650px;
+max-width:700px;
 }
 
 .hero h1{
-    font-size:3rem;
-    margin-bottom:15px;
+font-size:58px;
+line-height:1.1;
+margin-bottom:20px;
 }
 
 .hero p{
-    margin-bottom:25px;
-    font-size:1.1rem;
+font-size:20px;
+margin-bottom:25px;
 }
 
 .btn{
-    display:inline-block;
-    background:#38bdf8;
-    color:#fff;
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    margin-right:10px;
-    transition:.3s;
+display:inline-block;
+background:#00b4d8;
+color:white;
+padding:14px 28px;
+text-decoration:none;
+border-radius:30px;
+margin-right:10px;
+font-weight:600;
 }
 
 .btn:hover{
-    background:#0284c7;
+background:#0096c7;
 }
 
 .section{
-    padding:80px 0;
+padding:80px 0;
 }
 
 .section-title{
-    text-align:center;
-    font-size:2.2rem;
-    margin-bottom:50px;
-    color:#0f172a;
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#001233;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
 }
 
-.card{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-.card:hover{
-    transform:translateY(-8px);
+.service{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-.card h3{
-    margin-bottom:15px;
-    color:#0284c7;
+.service h3{
+color:#0077b6;
+margin-bottom:10px;
 }
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
 }
 
-.product{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.product img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.product-content{
-    padding:20px;
-}
-
-.testimonials{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.testimonial{
-    background:white;
-    padding:25px;
-    border-left:5px solid #38bdf8;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
 .contact{
-    background:#0f172a;
-    color:white;
+background:#001233;
+color:white;
 }
 
 .contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-info h3{
+margin-bottom:15px;
 }
 
 .contact-info p{
-    margin-bottom:12px;
-}
-
-.contact form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.contact input,
-.contact textarea{
-    padding:12px;
-    border:none;
-    border-radius:8px;
-}
-
-.contact button{
-    background:#38bdf8;
-    color:white;
-    border:none;
-    padding:12px;
-    border-radius:8px;
-    cursor:pointer;
+margin-bottom:12px;
+font-size:17px;
 }
 
 footer{
-    background:#020617;
-    color:#cbd5e1;
-    text-align:center;
-    padding:20px;
+background:#000814;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
 }
 
 @media(max-width:768px){
 
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero h1{
-        font-size:2.2rem;
-    }
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
+.hero h1{
+font-size:38px;
 }
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="container">
+
 <nav>
+
 <div class="logo">
-<img src="logo.jpg.jpeg" alt="Lens Star Optical" style="height:60px;">
+<img src="logo.jpg.jpeg" alt="Lens Star Optical">
 </div>
 
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
+
 </div>
 </header>
 
 <section class="hero" id="home">
+
 <div class="container">
+
 <div class="hero-content">
-<h1>See Clearly. Live Better.</h1>
+
+<h1>See Better.<br>Shine Brighter.</h1>
+
 <p>
 Premium Eyewear, Computerized Eye Testing,
-Progressive Lenses, Sunglasses and Contact Lenses.
+Progressive Lenses, Sunglasses & Contact Lenses.
 </p>
 
-<a href="#contact" class="btn">Book Eye Test</a>
 <a href="tel:+919365654574" class="btn">Call Now</a>
+
+<a href="#contact" class="btn">Visit Store</a>
+
 </div>
+
 </div>
+
 </section>
 
 <section class="section" id="about">
+
 <div class="container">
+
 <h2 class="section-title">About Lens Star Optical</h2>
 
-<p style="text-align:center;max-width:900px;margin:auto;">
-At Lens Star Optical, we are committed to providing high-quality eyewear,
-accurate eye testing, and personalized service. Our mission is to help
-every customer enjoy clear vision with stylish and comfortable eyewear.
-</p>
+<div class="about">
+
+At Lens Star Optical, we are dedicated to providing accurate eye testing, premium quality lenses, fashionable frames, sunglasses and contact lenses. Our goal is to help every customer enjoy crystal-clear vision with comfort and style.
 
 </div>
+
+</div>
+
 </section>
 
 <section class="section" id="services">
+
 <div class="container">
+
 <h2 class="section-title">Our Services</h2>
 
-<div class="cards">
+<div class="services">
 
-<div class="card">
-<h3>Eye Testing</h3>
-<p>Accurate computerized eye examinations for all ages.</p>
+<div class="service">
+<h3>Computerized Eye Testing</h3>
+<p>Advanced eye examination for accurate vision correction.</p>
 </div>
 
-<div class="card">
+<div class="service">
 <h3>Prescription Glasses</h3>
-<p>Custom-made spectacles tailored to your vision needs.</p>
+<p>Customized spectacles for every vision requirement.</p>
 </div>
 
-<div class="card">
+<div class="service">
 <h3>Progressive Lenses</h3>
-<p>Comfortable vision for reading, computer work, and distance.</p>
+<p>Comfortable vision for distance, intermediate and reading.</p>
 </div>
 
-<div class="card">
+<div class="service">
 <h3>Blue Cut Lenses</h3>
-<p>Protect your eyes from digital screen strain.</p>
+<p>Protection from harmful digital screen light.</p>
 </div>
 
-<div class="card">
+<div class="service">
 <h3>Sunglasses</h3>
-<p>UV-protected fashionable sunglasses for every style.</p>
+<p>Stylish UV protected sunglasses for all ages.</p>
 </div>
 
-<div class="card">
+<div class="service">
 <h3>Contact Lenses</h3>
-<p>Daily, monthly, and premium contact lens solutions.</p>
+<p>Daily, monthly and premium contact lens solutions.</p>
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<img src="shop.jpg.webp" alt="Lens Star Optical Shop">
+<section class="section" id="gallery">
+
+<div class="container">
+
+<h2 class="section-title">Our Store</h2>
+
+<div class="gallery">
+
+<img src="shop.jpg.webp" alt="Lens Star Optical Store">
 
 <img src="eyetest.jpg.jpeg" alt="Eye Testing">
 
 <img src="logo.jpg.jpeg" alt="Lens Star Optical">
-<div class="container">
-<h2 class="section-title">Featured Collection</h2>
 
-<div class="products">
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=80">
-<div class="product-content">
-<h3>Premium Frames</h3>
-<p>Elegant designs for men and women.</p>
-</div>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80">
-<div class="product-content">
-<h3>Modern Eyewear</h3>
-<p>Latest trends with maximum comfort.</p>
-</div>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80">
-<div class="product-content">
-<h3>Stylish Sunglasses</h3>
-<p>Protect your eyes while looking great.</p>
-</div>
 </div>
 
 </div>
-</div>
-</section>
 
-<section class="section">
-<div class="container">
-<h2 class="section-title">What Our Customers Say</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-<p>
-"Excellent service and a great collection of frames.
-Highly recommended!"
-</p>
-<strong>- Happy Customer</strong>
-</div>
-
-<div class="testimonial">
-<p>
-"Very professional eye testing and affordable pricing."
-</p>
-<strong>- Satisfied Customer</strong>
-</div>
-
-<div class="testimonial">
-<p>
-"Found the perfect progressive lenses here.
-Great experience."
-</p>
-<strong>- Loyal Customer</strong>
-</div>
-
-</div>
-</div>
 </section>
 
 <section class="section contact" id="contact">
+
 <div class="container">
+
 <h2 class="section-title" style="color:white;">Contact Us</h2>
 
 <div class="contact-grid">
 
 <div class="contact-info">
-<p>📍 Boarding Road, Nandan Tower, Arunudoi Path, Sivasagar, Assam 785640</p>
+
+<h3>Lens Star Optical</h3>
+
+<p>📍 Boarding Road, Nandan Tower, Arunudoi Path, Sivasagar, Assam - 785640</p>
 
 <p>📞 9365654574</p>
 
@@ -414,24 +366,35 @@ Great experience."
 
 <p>📧 lensstaroptical@gmail.com</p>
 
-<p>🕒 Monday – Sunday: 9:30 AM – 9:00 PM</p>
-</div>
-
-<form>
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
+<p>🕒 Monday to Sunday : 9:30 AM – 9:00 PM</p>
 
 </div>
+
+<div>
+
+<h3>Why Choose Us?</h3>
+
+<p>✔ Professional Eye Testing</p>
+<p>✔ Latest Eyewear Collection</p>
+<p>✔ Premium Progressive Lenses</p>
+<p>✔ Affordable Pricing</p>
+<p>✔ Friendly Customer Service</p>
+
 </div>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Lens Star Optical. All Rights Reserved.</p>
+
+© 2026 Lens Star Optical | See Better Shine Brighter.
+
 </footer>
 
-</body>
+<a class="whatsapp" href="https://wa.me/919365654574">💬</a>
 
+</body>
 </html>
